@@ -1,27 +1,40 @@
-div {
-	display: block;
+body {
+    background: #F5F5F5;
 }
 
-.Menu {
-    font-family: Arial,Helvetica,sans-serif;
-    font-size: 10px;
-    cursor: default;
-    background: url(assets/couple.jpg);
-    color: #000;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-    border: 0px solid #EEEEEE;
-    display: block;
+nav, footer {
+    background-color: #0f1626; 
+}
+
+.brand-logo {
+    margin-left: -100px;
+}
+
+.footer-copyright {
+    margin-left: -30px;
+    background-color: #080b14;
 }
 
 
-.Mainbox {
-
+h5 {
+    color: #0f1626;
 }
 
-.Mainbox__title {
-	
+li {
+    color: #AB987A;
 }
+
+
+
+.fa {
+    color: #FF533D
+}
+.btn {
+    color: #F5F5F5;
+}
+
+input[type="text"], textarea {
+  color: #0f1626; 
+}
+
+
