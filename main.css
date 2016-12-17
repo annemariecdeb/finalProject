@@ -1,0 +1,84 @@
+body {
+    background: #000;
+}
+
+.Main {
+    background-color: #F5F5F5;
+    position: relative;
+}
+
+.Main__index {
+    height: 698px;  
+    position: relative; 
+}
+
+.Header__nav {
+    background-color: #0f1626; 
+}
+
+.brand-logo {
+    margin-left: -100px;
+}
+
+.Form-submit {
+    float: right;
+}
+
+#myChart--pie {
+    width: 300px !important;
+    height: 300px !important;
+    margin: 0 auto;
+}
+
+#myChart--polar {
+    width: 300px !important;
+    height: 300px !important;
+    margin: 0 auto;
+}
+
+#myChart--radar {
+    width: 300px !important;
+    height: 300px !important;
+    margin: 0 auto;
+}
+
+.Footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+}
+
+
+.Copyright  {
+    margin-left: -100px;
+    background-color: #080b14;
+    padding: 20px;
+    bottom: 0;
+}
+
+.Chart{
+    border: 1px solid black;
+    width: 80%;
+    margin: 15px auto;
+}
+
+h5 {
+    color: #0f1626;
+  
+}
+
+li {
+    color: #AB987A;
+}
+
+.fa {
+    color: #FF533D;
+}
+
+
+input[type="text"], textarea {
+  color: #0f1626; 
+}
+
+

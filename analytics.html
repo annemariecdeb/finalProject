@@ -14,51 +14,66 @@
 <!-- Head  -->
 
 <body>
-	<header class="row Header">
-		<!-- full page width required hence a container within each row -->
-		<div class="navbar-fixed">
-			<nav>
-				<div class="container">
-					<div class="nav-wrapper">
-						<a href="#!" class="brand-logo"><i class="fa fa-anchor " aria-hidden="true"></i>DroppingAnchor</a>
-						<ul class="right hide-on-med-and-down Button Button--rounded">
-							<li><a class="waves-effect waves-light btn grey">Clear form</a></li>
-							<li><a class="waves-effect waves-light btn grey">Scroll to the top and beyond</a></li>
-						</ul>
-					</div>
-				</div>
-			</nav>
+    <header class="row Header" style="margin-bottom: 0;">
+        <!-- full page width required hence a container within each row -->
+        <div class="navbar-fixed">
+            <nav class="Header__nav">
+                <div class="container">
+                    <div class="nav-wrapper">
+                        <a href="#!" class="brand-logo"><i class="fa fa-anchor Header__logo" aria-hidden="true"></i>DroppingAnchor</a>
+                        <ul class="right hide-on-med-and-down Button Button--rounded">
+                            <li><a class="waves-effect waves-light btn grey">Return to my questionnaire</a></li>
+                            <li><a class="waves-effect waves-light btn grey">[TBC]</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Header -->
+<div class="row Main">
+	<div class="container">
+		<div class="row Chart">
+			<div class="container">
+				<h2>Pie chart</h2>
+			</div>
+			<canvas id="myChart--pie" width="100" height="100"></canvas>
 		</div>
-	</header>
 
-	<!-- Header -->
+		<div class="row Chart">
+			<div class="container">
+				<h2>Polar chart</h2>
+			</div>
+			<canvas id="myChart--polar" width="100" height="100"></canvas>
+		</div>
 
-<div class="row Chart">
-	<div class="container">
-		<h2>Pie chart</h2>
+		<div class="row Chart">
+			<div class="container">
+				<h2>Radar chart</h2>
+			</div>
+			<canvas id="myChart--radar" width="100" height="100"></canvas>
+		</div>
 	</div>
-	<canvas id="myChart--pie" width="100" height="100"></canvas>
-</div>
-
-<div class="row Chart">
-	<div class="container">
-		<h2>Polar chart</h2>
-	</div>
-	<canvas id="myChart--polar" width="100" height="100"></canvas>
-</div>
-
-<div class="row Chart">
-	<div class="container">
-		<h2>Radar chart</h2>
-	</div>
-	<canvas id="myChart--radar" width="100" height="100"></canvas>
 </div>
 
 
 <!-- Main -->
 
 
-<!-- Footer -->
+	<footer class="row" style="margin-bottom: 0;">
+		<div class="footer-copyright Copyright">
+		    <div class="container grey-text text-lighten-4">
+		        DroppingAnchor
+		        <br> 
+		        © 2016 Copyright
+	            <br>
+	            <a class="grey-text text-lighten-4" href="#!">Terms and Conditions of Use</a>
+	            <br>
+	            <a class="grey-text text-lighten-4" href="#!">Made with &hearts; in NYC</a>
+		     </div>
+		</div>
+    </footer>
+    <!-- Footer -->
 
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.bundle.js"></script>
