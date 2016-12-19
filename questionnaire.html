@@ -44,6 +44,7 @@
                     <div class="input-field col s6">
                         <input placeholder="Last Name" id="last_name" type="text" class="validate">
                     </div>
+                    <div id="name_error_msg"></div>
                 </div>
                 <!-- First/last name -->
                 <div class="Question Radio row">
@@ -66,35 +67,35 @@
                             <label for="test4">Spouse B</label>
                         </p>
                     </div>
-                    <!-- Question -->
+                  
                 </div>
-                <!-- Guest of -->
+                <!-- Party -->
                 <br>
                 <div class="Question Checkbox row">
                     <h5> 3. How do you know the happy couple?</h5>
                     <div class="Question">
                         <p>
-                            <input class="with-gap" name="group1" type="radio" id="test5" />
+                            <input class="with-gap" name="group2" type="radio" id="test5" />
                             <label for="test5">Family</label>
                         </p>
                         <p>
-                            <input class="with-gap" name="group1" type="radio" id="test6" />
+                            <input class="with-gap" name="group2" type="radio" id="test6" />
                             <label for="test6">School</label>
                         </p>
                         <p>
-                            <input class="with-gap" name="group1" type="radio" id="test7" />
+                            <input class="with-gap" name="group2" type="radio" id="test7" />
                             <label for="test7">University</label>
                         </p>
                         <p>
-                            <input class="with-gap" name="group1" type="radio" id="test8" />
+                            <input class="with-gap" name="group2" type="radio" id="test8" />
                             <label for="test8">Work</label>
                         </p>
                         <p>
-                            <input class="with-gap" name="group1" type="radio" id="test9" />
+                            <input class="with-gap" name="group2" type="radio" id="test9" />
                             <label for="test9">+1</label>
                         </p>
                         <p>
-                            <input class="with-gap" name="group1" type="radio" id="test10" />
+                            <input class="with-gap" name="group2" type="radio" id="test10" />
                             <label for="test10">Friends of parents</label>
                         </p>
                         <p>
@@ -102,9 +103,8 @@
                             <label for="test11">Some random bar</label>
                         </p>
                     </div>
-                    <!-- Question -->
                 </div>
-                <!-- How do you know? -->
+                <!-- Relationships -->
                 <br>
                 <div class="Question Checkbox row">
                     <!-- REMEMBER: this is a jQuery plugin so make sure you initialize this in your document ready. -->
@@ -120,13 +120,13 @@
                             
                         </div>
                     </div>
-                    <!-- Question -->
+                    <!-- Gender -->
                 </div>
                 <br>
                 <div class="Question Datepicker row">
                     <h5> 5. When is your birthday?</h5>
                     <!-- Calendar does not appear like graphic on site -->
-                    <input type="date" class="datepicker">
+                    <input type="date" class="datepicker" id="datepicker">
                 </div>
                 <!-- Birthday -->
                 <div class="Question Input row">
@@ -134,8 +134,10 @@
                     <form class="col s12">
                         <div class="row">
                             <div class="input-field col s6">
-                                <input placeholder="Your homeland" id="first_name" type="text" class="validate">
+                                <input placeholder="Your homeland" id="homeland" type="text" class="validate">
                             </div>
+                        <div id="name_error_msg"></div>
+
                         </div>
                 </div>
                 <!-- Nationality -->
@@ -144,7 +146,7 @@
                     <div class="switch">
                         <label>
                             No
-                            <input type="checkbox">
+                            <input type="checkbox" name="toggle1"> 
                             <span class="lever"></span> Yes
                         </label>
                     </div>
@@ -156,38 +158,37 @@
                     <div class="switch">
                         <label>
                             No
-                            <input type="checkbox">
+                            <input type="checkbox" name="toggle2">
                             <span class="lever"></span> Yes
                         </label>
                     </div>
                 </div>
-                <!-- Pre-wedding event -->
+                <!-- Wedding event -->
                 <br>
                 <div class="Question Radio row">
                     <h5> 9. How will you be travelling to the big day?</h5>
                     <div class="Question">
                         <p>
-                            <input class="with-gap" name="group1" type="radio" id="test12" />
+                            <input class="with-gap" name="group3" type="radio" id="test12" />
                             <label for="test12">By car</label>
                         </p>
                         <p>
-                            <input class="with-gap" name="group1" type="radio" id="test13" />
+                            <input class="with-gap" name="group3" type="radio" id="test13" /> 
                             <label for="test13">By train</label>
                         </p>
                         <p>
-                            <input class="with-gap" name="group1" type="radio" id="test14" />
+                            <input class="with-gap" name="group3" type="radio" id="test14" />
                             <label for="test14">By bus</label>
                         </p>
                         <p>
-                            <input class="with-gap" name="group1" type="radio" id="test15" />
+                            <input class="with-gap" name="group3" type="radio" id="test15" />
                             <label for="test15">By plane</label>
                         </p>
                         <p>
-                            <input class="with-gap" name="group1" type="radio" id="test16" />
+                            <input class="with-gap" name="group3" type="radio" id="test16" />
                             <label for="test16">With my own two feet</label>
                         </p>
                     </div>
-                    <!-- Question -->
                 </div>
                 <!-- Travel -->
                 <br>
@@ -223,7 +224,6 @@
                             <label for="filled-in-box7">Other</label>
                         </p>
                     </div>
-                    <!-- Question -->
                 </div>
                 <!-- Dietary requirements -->
                 <br>
@@ -232,12 +232,12 @@
                     <div class="switch">
                         <label>
                             No
-                            <input type="checkbox">
+                            <input type="checkbox" name="toggle3">
                             <span class="lever"></span> Yes
                         </label>
                     </div>
                 </div>
-                <!-- Travel assistance -->
+                <!-- Help -->
                 <br>
                 <div class="Question Checkbox row">
                     <h5> 12. And finally, please provide us with the following details so the [crazy/loving/OCD] couple can keep tabs on you:</h5>
@@ -283,8 +283,10 @@
 		    </div>
     	</footer>
     <!-- Footer -->
+
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+    <script src="scripts/questionnaire.js"></script>
 </body>
 
 </html>
