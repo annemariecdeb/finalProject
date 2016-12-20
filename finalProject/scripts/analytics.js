@@ -5,22 +5,19 @@ const pattendanceDiv = document.getElementById("preweddingAttendance");
 
 const pattendanceData = {
     labels: [
-        "Attending pre-event",
-        "Not attending pre-event",
-        "TBC"
+        "Attending rehearsal dinner",
+        "Not attending rehearsal dinner"
     ],
     datasets: [
         {
-            data: [300, 50, 100],
+            data: [200, 50],
             backgroundColor: [
-                "#FF6384",
-                "#36A2EB",
-                "#FFCE56"
+                "#AD974F",
+                "#EAEAEA"
             ],
             hoverBackgroundColor: [
-                "#FF6384",
-                "#36A2EB",
-                "#FFCE56"
+                "#AB987A",
+                "#EAEAEA"
             ]
         }]
 };
@@ -39,21 +36,18 @@ const attendanceDiv = document.getElementById("weddingAttendance");
 const attendanceData = {
     labels: [
         "Attending wedding",
-        "Not attending wedding",
-        "TBC"
+        "Not attending wedding"
     ],
     datasets: [
         {
-            data: [300, 50, 100],
+            data: [300, 20],
             backgroundColor: [
-                "#FF6384",
-                "#36A2EB",
-                "#FFCE56"
+                "#FF533D",
+                "#AB987A"
             ],
             hoverBackgroundColor: [
-                "#FF6384",
-                "#36A2EB",
-                "#FFCE56"
+                "#FF533D",
+                "#AB987A"
             ]
         }]
 };
@@ -81,8 +75,8 @@ const dietaryData = {
             6
         ],
         backgroundColor: [
-            "#FF6384",
-            "#4BC0C0",
+            "#FF533D",
+            "#5a8b5a",
             "#FFCE56",
             "#E7E9ED",
             "#36A2EB",
@@ -185,30 +179,21 @@ const countryDiv = document.getElementById("countryBubbles");
 const countryData = {
     datasets: [
         {
-            label: 'First Dataset',
+            label: 'Canadian',
             data: [
                 {
                     x: 20,
                     y: 30,
+                    z: 40,
                     r: 15
-                },
-                {
-                    x: 40,
-                    y: 10,
-                    r: 10
-                },
-                {
-                    x: 20,
-                    y: 15,
-                    r: 14   
                 }
 // Need to find a way to include more datasets for each country inputted
 
 
                 
             ],
-            backgroundColor:"#FF6384",
-            hoverBackgroundColor: "#FF6384",
+            backgroundColor:"#AB987A",
+            hoverBackgroundColor: "#AB987A",
         }]
 };
 

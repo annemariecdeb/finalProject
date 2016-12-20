@@ -5,77 +5,6 @@ body {
 
 * { box-sizing: border-box; }
 
-/*GRID*/
-
-
-/* ---- isotope ---- */
-
-.grid {
-  margin-top: 60px;
-  margin-right: -185px;
-}
-
-/* clear fix */
-.grid:after {
-  content: '';
-  display: block;
-  clear: both;
-}
-
-/* ---- .element-item ---- */
-
-.element-item img {
-  display: block;
-  max-width: 100%;
-}
-
-.element-item {
-  position: relative;
-  float: left;
-  /*width: 30%;*/
-  overflow: hidden;
-  margin: 0;
-}
-
-.element__item--flowers {
-  width: 25%;
-  height: 338px;
-}
-
-.element__item--feet {
-  width: 22%;
-  height: 30%;
-}
-
-.element__item--rings {
-  width: 24%;
-  height: 338px;
-}
-
-
-.element__item--cake {
-  width: 18%;
-  height: 338px;
-}
-
-.element-item .number {
-  opacity: 0;
-  background-color: rgba(30,20,20,.8);
-  position: absolute;
-  bottom: -20px;
-  top: -20px;
-  left: 0;
-  right: 0;
-  color: white;
-  text-align: center;
-  padding-top: 50px;
-  transition: all .4s;
-}
-
-.element-item:hover .number {
-  opacity: 1;
-}
-/*Grid*/
 
 .Main {
     background-color: #F5F5F5;
@@ -95,16 +24,24 @@ body {
     margin-left: -100px;
 }
 
+.Copyright  {
+    margin-top: -8px;
+    margin-left: -100px;
+    background-color: #080b14;
+    padding: 20px;
+    bottom: 0;
+}
+
 .Form-submit {
     float: right;
 }
 
-#myChart--pie {
+/*#myChart--pie {
     width: 300px !important;
     height: 300px !important;
     margin: 0 auto;
-}
-
+}*/
+/*
 #myChart--polar {
     width: 300px !important;
     height: 300px !important;
@@ -115,27 +52,21 @@ body {
     width: 300px !important;
     height: 300px !important;
     margin: 0 auto;
-}
+}*/
 
-.Footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    margin: 0;
-}
-
-
-.Copyright  {
-    margin-left: -100px;
-    background-color: #080b14;
-    padding: 20px;
-    bottom: 0;
-}
-
-.Chart{
-    border: 1px solid black;
-    width: 80%;
+.Chart {
+    border: 1px solid grey;
+    width: 60%;
     margin: 15px auto;
+
+}
+
+
+
+h2 {
+  color: #231F20;
+  font-size: 25px;
+  text-align: center;
 }
 
 h5 {
