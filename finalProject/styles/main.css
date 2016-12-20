@@ -1,0 +1,193 @@
+body {
+    background: #F5F5F5;
+    font-family: sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+/*GRID*/
+
+
+/* ---- isotope ---- */
+
+.grid {
+  margin-top: 60px;
+  margin-right: -185px;
+}
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .element-item ---- */
+
+.element-item img {
+  display: block;
+  max-width: 100%;
+}
+
+.element-item {
+  position: relative;
+  float: left;
+  /*width: 30%;*/
+  overflow: hidden;
+  margin: 0;
+}
+
+.element__item--flowers {
+  width: 25%;
+  height: 338px;
+}
+
+.element__item--feet {
+  width: 22%;
+  height: 30%;
+}
+
+.element__item--rings {
+  width: 24%;
+  height: 338px;
+}
+
+
+.element__item--cake {
+  width: 18%;
+  height: 338px;
+}
+
+.element-item .number {
+  opacity: 0;
+  background-color: rgba(30,20,20,.8);
+  position: absolute;
+  bottom: -20px;
+  top: -20px;
+  left: 0;
+  right: 0;
+  color: white;
+  text-align: center;
+  padding-top: 50px;
+  transition: all .4s;
+}
+
+.element-item:hover .number {
+  opacity: 1;
+}
+/*Grid*/
+
+.Main {
+    background-color: #F5F5F5;
+    position: relative;
+}
+
+.Main__index {
+    height: 698px;  
+    position: relative; 
+}
+
+.Header__nav {
+    background-color: #0f1626; 
+}
+
+.brand-logo {
+    margin-left: -100px;
+}
+
+.Form-submit {
+    float: right;
+}
+
+#myChart--pie {
+    width: 300px !important;
+    height: 300px !important;
+    margin: 0 auto;
+}
+
+#myChart--polar {
+    width: 300px !important;
+    height: 300px !important;
+    margin: 0 auto;
+}
+
+#myChart--radar {
+    width: 300px !important;
+    height: 300px !important;
+    margin: 0 auto;
+}
+
+.Footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+}
+
+
+.Copyright  {
+    margin-left: -100px;
+    background-color: #080b14;
+    padding: 20px;
+    bottom: 0;
+}
+
+.Chart{
+    border: 1px solid black;
+    width: 80%;
+    margin: 15px auto;
+}
+
+h5 {
+    color: #0f1626;
+  
+}
+
+li {
+    color: #AB987A;
+}
+
+.fa {
+    color: #FF533D;
+}
+
+
+input[type="text"], textarea {
+  color: #0f1626; 
+}
+
+/*Questionnaire*/
+
+
+  /* label color */
+   .input-field label {
+     color: #000;
+   }
+   /* label focus color */
+   .input-field input[type=text]:focus + label {
+     color: #000;
+   }
+   /* label underline focus color */
+   .input-field input[type=text]:focus {
+     border-bottom: 1px solid #000;
+     box-shadow: 0 1px 0 0 #000;
+   }
+   /* valid color */
+   .input-field input[type=text].valid {
+     border-bottom: 1px solid #000;
+     box-shadow: 0 1px 0 0 #000;
+   }
+   /* invalid color */
+   .input-field input[type=text].invalid {
+     border-bottom: 1px solid #000;
+     box-shadow: 0 1px 0 0 #000;
+   }
+   /* icon prefix focus color */
+   .input-field .prefix.active {
+     color: #000;
+   }
+      
+
+
+
+

@@ -1,0 +1,93 @@
+{
+    "data": {
+        // data is the root
+        "guest": {
+            // guest is the child
+            "guestId": "ID from Provider",
+            "contactInfo": {
+                "firstName": "John",
+                "lastName": "Smith",
+                "email": "whateveryoucallyourself@gmail.com",
+                "telephone": "my number"
+            },
+            "relationships": {
+                "party": "bride",
+                "origin": "uni"
+            },
+            "identity": {
+                "age": 33,
+                "birthday": 1482006481735,
+                "ethnicity": "Beige",
+                "genderIdentity": "plus",
+                "food": "Vegan"
+            },
+            "logistics": {
+                "transport": "train",
+                "assistance": "false"
+            },
+            "events": [
+                {
+                    "pre-wedding": {
+                        "going": "true"
+                    },
+                    "wedding": {
+                        "going": "false"
+                    }
+                }
+            ]
+        },
+        "users": [
+            {
+                "userID": "ID from Provider",
+                "userRole": "bride",
+                "contactInfo": {
+                    "firstName": "Jane",
+                    "lastName": "Doe",
+                    "email": "dmx@gmail.com",
+                    "telephone": "my number"
+                }
+            },
+            {
+                "userID": "ID from Provider",
+                "userRole": "groom",
+                "contactInfo": {
+                    "firstName": "Bob",
+                    "lastName": "Doe",
+                    "email": "Nas@gmail.com",
+                    "telephone": "my number"
+                }
+            }
+        ],
+        "event": [
+            {
+                "pre-wedding": {
+                    "eventID": "9fk3sd",
+                    "date": 1482006481733,
+                    "location": {
+                        "name": "St. Pats",
+                        "add1": "23r3fdsf",
+                        "add2": "ewfwef",
+                        "city": "sdfoj",
+                        "state": "NY",
+                        "zip": "11111",
+                        "country": "MeriCA!!"
+                    }
+                },
+                "wedding": {
+                    "eventID": "9fk3assd",
+                    "date": 1482006481733,
+                    "location": {
+                        "name": "St. Pauls",
+                        "add1": "23r3fascasscsddsf",
+                        "add2": "ewsdsdfwef",
+                        "city": "sdfoj",
+                        "state": "NY",
+                        "zip": "11111",
+                        "country": "MeriCA!!"
+                    }
+                }
+                
+            }
+        ]
+    }
+}
