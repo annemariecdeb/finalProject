@@ -13,7 +13,7 @@
 
 <body>
 	<!-- TAQ NOTE: set margin-bottom to 0 -->
-    <header class="row Header" style="margin-bottom: 0;">
+    <header class="row Header">
         <!-- full page width required hence a container within each row -->
         <div class="navbar-fixed">
             <nav class="Header__nav">
@@ -36,7 +36,7 @@
                 <div class="Question Input row">
                 <!-- TAQ NOTE: add class to h5 below to remove the margin
                 	 top causing spacing issues manually -->
-                    <h5 style="margin-top: 0;"> 1. What is your name?</h5>
+                    <h5> 1. What is your name?</h5>
                     <div class="input-field col s6">
                         <input placeholder="First Name" id="first_name" type="text" class="validate">
                         <label for="first_name"></label>
@@ -49,7 +49,7 @@
                 <!-- First/last name -->
                 <div class="Question Radio row">
                     <h5> 2. You are a guest of the:</h5>
-                    <div class="Question">
+                    <div class="Question__choices q-party">
                         <p>
                             <input class="with-gap" name="group1" type="radio" id="test1" />
                             <label for="test1">Bride</label>
@@ -73,7 +73,7 @@
                 <br>
                 <div class="Question Checkbox row">
                     <h5> 3. How do you know the happy couple?</h5>
-                    <div class="Question">
+                    <div class="Question__choices">
                         <p>
                             <input class="with-gap" name="group2" type="radio" id="test5" />
                             <label for="test5">Family</label>
@@ -109,7 +109,7 @@
                 <div class="Question Checkbox row">
                     <!-- REMEMBER: this is a jQuery plugin so make sure you initialize this in your document ready. -->
                     <h5> 4. Which of the following best describes you?</h5>
-                    <div class="Question">
+                    <div class="Question__choices">
                         <div class="col s12">
                             <select class="browser-default">
                                 <option value="" disabled selected>Choose your option</option>
@@ -167,7 +167,7 @@
                 <br>
                 <div class="Question Radio row">
                     <h5> 9. How will you be travelling to the big day?</h5>
-                    <div class="Question">
+                    <div class="Question__choices">
                         <p>
                             <input class="with-gap" name="group3" type="radio" id="test12" />
                             <label for="test12">By car</label>
@@ -194,7 +194,7 @@
                 <br>
                 <div class="Question Checkbox row">
                     <h5> 10. Do you have any dietary requirements?</h5>
-                    <div class="Question">
+                    <div class="Question__choices">
                         <p>
                             <input type="checkbox" class="filled-in" id="filled-in-box" />
                             <label for="filled-in-box">No</label>
@@ -241,7 +241,7 @@
                 <br>
                 <div class="Question Checkbox row">
                     <h5> 12. And finally, please provide us with the following details so the [crazy/loving/OCD] couple can keep tabs on you:</h5>
-                    <div class="Question Input row">
+                    <div class="Question__choices Input row">
                         <form class="col s12">
                             <div class="row">
                                 <div class="input-field col s6">
@@ -261,7 +261,7 @@
                 </div>
                 <!-- Contact details -->
                 <div class="Question Checkbox row">
-	                <button class="btn waves-effect waves-light grey right" type="submit" name="action">
+	                <button class="btn waves-effect waves-light grey right js-formSubmit" type="submit" name="action">
 	                	Submit
 	                </button>
 	            </div>
@@ -284,9 +284,10 @@
     	</footer>
     <!-- Footer -->
 
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js "></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
-    <script src="scripts/questionnaire.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.16.0/jquery.validate.min.js"></script>
+    <script src="scripts/guest-form.js "></script>
 </body>
 
 </html>

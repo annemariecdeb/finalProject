@@ -49,7 +49,7 @@ function validateRadio() {
 // PARTY
 
 // 3. RELATIONSHIPS
-const rel = $("#group2"),
+const rel = $("#group2");
 
     function validateRadio() {
 
@@ -95,8 +95,8 @@ function validateForm() {
 // BIRTHDAY
 
 // 6. NATIONALITY
-const country = $("#homeland"),
-    var msg = document.getElementById("name_error_msg");
+const country = $("#homeland");
+var msg = document.getElementById("name_error_msg");
 
 
 function validateInput() {
