@@ -1,113 +1,97 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="UTF-8">
-	<title>DroppingAnchor - Analytics</title>
-	
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel='stylesheet' href='styles/main.css'>
-
-</head>
-
-<!-- Head  -->
-
-<body>
-    <header class="row Header" style="margin-bottom: 0;">
-        <!-- full page width required hence a container within each row -->
-        <div class="navbar-fixed">
-            <nav class="Header__nav">
-                <div class="container">
-                    <div class="nav-wrapper">
-                        <a href="#!" class="brand-logo"><i class="fa fa-anchor Header__logo" aria-hidden="true"></i>DroppingAnchor</a>
-                        <ul class="right hide-on-med-and-down Button Button--rounded">
-                            <li><a class="waves-effect waves-light btn grey">Return to my questionnaire</a></li>
-                            <li><a class="waves-effect waves-light btn grey">[TBC]</a></li>
-                        </ul>
+    <head>
+        <meta charset="UTF-8">
+        <title>DroppingAnchor - Analytics</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel='stylesheet' href='styles/main.css'>
+    </head>
+    <!-- Head  -->
+    <body>
+        <header class="row Header" style="margin-bottom: 0;">
+            <!-- full page width required hence a container within each row -->
+            <div class="navbar-fixed">
+                <nav class="Header__nav">
+                    <div class="container">
+                        <div class="nav-wrapper">
+                            <a href="#!" class="brand-logo"><i class="fa fa-anchor Header__logo" aria-hidden="true"></i>DroppingAnchor</a>
+                            <ul class="right hide-on-med-and-down Button Button--rounded">
+                                <li><a class="waves-effect waves-light btn grey">Your form</a></li>
+                                <li><a class="waves-effect waves-light btn grey">Hjælp</a></li>
+                            </ul>
+                        </div>
                     </div>
+                </nav>
+            </div>
+        </header>
+        <!-- Header -->
+        <div class="row Main">
+            <div class="container">
+                <div class="row Chart">
+                    <div class="container">
+                        <h3>YOUR GUEST ANALYTICS</h3>
+                        <h2>I. How do you know your guests?</h2>
+                    </div>
+                    <canvas id="relBar" width="100" height="100"></canvas>
                 </div>
-            </nav>
+                <div class="row Chart">
+                    <div class="container">
+                        <h2>II. Guests attending your rehearsal dinner</h2>
+                    </div>
+                    <canvas id="preweddingAttendance" width="100" height="100"></canvas>
+                </div>
+                <div class="row Chart">
+                    <div class="container">
+                        <h2>III. Guests attending your wedding</h2>
+                    </div>
+                    <canvas id="weddingAttendance" width="100" height="100"></canvas>
+                </div>
+                <div class="row Chart">
+                    <div class="container">
+                        <h2>IV. Your guests' dietary requirements</h2>
+                    </div>
+                    <canvas id="dietaryChart" width="100" height="100"></canvas>
+                </div>
+                <!-- <div class="row Chart">
+                    <div class="container">
+                    	<h2>Party</h2>
+                    </div>
+                    <canvas id="partyRadar" width="100" height="100"></canvas>
+                    </div> -->
+                <div class="row Chart">
+                    <div class="container">
+                        <h2>V. Your guests' global footprint</h2>
+                    </div>
+                    <canvas id="countryLine" width="100" height="100"></canvas>
+                </div>
+                <div class="row Chart">
+                    <div class="container">
+                    	<h2>VI. Bride or Groom?</h2>
+                    </div>
+                    <canvas id="partyDoughnut" width="100" height="100"></canvas>
+                </div>
+            </div>
         </div>
-    </header>
-    <!-- Header -->
-<div class="row Main">
-	<div class="container">
-		<div class="row Chart">
-			<div class="container">
-				<h2>Pre-wedding attendance</h2>
-			</div>
-			<canvas id="preweddingAttendance" width="100" height="100"></canvas>
-		</div>
-
-		<div class="row Chart">
-			<div class="container">
-				<h2>Wedding attendance</h2>
-			</div>
-			<canvas id="weddingAttendance" width="100" height="100"></canvas>
-		</div>
-
-		<div class="row Chart">
-			<div class="container">
-				<h2>Dietary requirements</h2>
-			</div>
-			<canvas id="dietaryChart" width="100" height="100"></canvas>
-		</div>
-
-		<div class="row Chart">
-			<div class="container">
-				<h2>Relationships</h2>
-			</div>
-			<canvas id="relRadar" width="100" height="100"></canvas>
-		</div>
-
-		<!-- <div class="row Chart">
-			<div class="container">
-				<h2>Party</h2>
-			</div>
-			<canvas id="partyRadar" width="100" height="100"></canvas>
-		</div> -->
-
-		<div class="row Chart">
-			<div class="container">
-				<h2>Nationality</h2>
-			</div>
-			<canvas id="countryBubbles" width="100" height="100"></canvas>
-		</div>
-
-		<!-- <div class="row Chart">
-			<div class="container">
-				<h2>Age</h2>
-			</div>
-			<canvas id="ageDoughnut" width="100" height="100"></canvas>
-		</div> -->
-	</div>
-</div>
-
-
-<!-- Main -->
-
-
-	<footer class="row" style="margin-bottom: 0;">
-		<div class="footer-copyright Copyright">
-		    <div class="container grey-text text-lighten-4">
-		        DroppingAnchor
-		        <br> 
-		        © 2016 Copyright
-	            <br>
-	            <a class="grey-text text-lighten-4" href="#!">Terms and Conditions of Use</a>
-	            <br>
-	            <a class="grey-text text-lighten-4" href="#!">Made with &hearts; in NYC</a>
-		     </div>
-		</div>
-    </footer>
-    <!-- Footer -->
-
-<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.bundle.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
-
-<script src="scripts/analytics.js"></script>
-
-</body>
+        <!-- Main -->
+        <footer class="row" style="margin-bottom: 0;">
+            <div class="footer-copyright Copyright">
+                <div class="container grey-text text-lighten-4">
+                    DroppingAnchor
+                    <br> 
+                    © 2016 Copyright
+                    <br>
+                    <a class="grey-text text-lighten-4" href="#!">Terms and Conditions of Use</a>
+                    <br>
+                    <a class="grey-text text-lighten-4" href="#!">Made with &hearts; in NYC</a>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer -->
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.bundle.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+        <script src="scripts/analytics.js"></script>
+    </body>
 </html>
