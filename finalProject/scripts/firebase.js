@@ -1,80 +1,70 @@
-$(function(){
-  //This is our variable to keep track of data coming from Firebase
-  var data= [];
-  
-  //Here we are creating a new connection to firebase
-	var ref= new Firebase('#');
-  
+// You need to first initialize your Firebase
+const config = {
+    apiKey: "AIzaSyDq12eFU2U2oAgynMolfkUl3OabWdWZD5A",
+    authDomain: "droppinganchor-fbfdf.firebaseapp.com",
+    databaseURL: "https://droppinganchor-fbfdf.firebaseio.com",
+    storageBucket: "droppinganchor-fbfdf.appspot.com",
+    messagingSenderId: "46721222870"
+};
 
-  //Now we are listening to data updates from firebase
-	ref.on("value", function (snapshot){
-    console.log(snapshot.val());
-   //Each time the data updates at firebase, this will put it in the data variable
-    data= snapshot.val();
-  })
+// Where does one write in Firebase:
+firebase.initializeApp(config);
 
-//Entire questionnaire
+var rootRef = database.ref('/');// the slash is the top level and a shortcut is rootRef
+var usersRef = rootRef.child('users/');
+var guestsRef = rootRef.child('guest/');
+var eventsRef = rootRef.child('events/');
+
+// This is where you're going to write in Firebase
+const database = firebase.database();
+const rootRef = database.ref('/');
+const weddingContainer = $('.js-wedding-container');
+const submitNewQuestionnaire = $('.js-submit-questionnaire'); 
+let questionnaireValues = {};
+
+
+
+// ADD A NEW WEDDING EVENT FOR GUEST
+
+submitNewEvent.click(submitQuestionnaire); //adds new guest data until button is clicked
+
+//This is our variable to keep track of data coming from Firebase
+function submitQuestionnaire() {
+   const questionnaireData = getQuestionnaireValues();
+   console.log('weddingData from getVal', questionnaireData);
+   addEvent(questionnaireData);
+}
+
+// QUESTIONNAIRE
 
 // Our main function we are feeding all the data into
-$('#newQuestionnaire').submit(function(event) {
+//Take the values from the form, and put them in an object
+function getQuestionnaireValues() {
+    questionnaireValues.weddingFN = $('.js-wedding-firstname').val();
+    questionnaireValues.weddingLN = $('.js-wedding-lastname').val();
+    questionnaireValues.weddingGuest = $('.js-wedding-guest').val();
+    questionnaireValues.weddingRelationship = $('.js-wedding-relationship').val();
+    questionnaireValues.weddingGender = $('.js-wedding-gender').val();
+    questionnaireValues.weddingBirthday = $('.js-wedding-birthday').val();  
+    questionnaireValues.weddingHomeland = $('.js-wedding-homeland').val();
+    questionnaireValues.weddingRehearsal = $('.js-wedding-rehearsal').val();
+    questionnaireValues.weddingWedding = $('.js-wedding-wedding').val();
+    questionnaireValues.weddingTravel = $('.js-wedding-travel').val();
+    questionnaireValues.weddingFood = $('.js-wedding-food').val();
+    questionnaireValues.weddingHelp = $('.js-wedding-help').val();
+    questionnaireValues.weddingEmail = $('.js-wedding-email').val();
+    questionnaireValues.weddingTel= $('.js-wedding-tel').val();
   
-  var $form = $(this);
-  console.log("Submit to Firebase");
-  
-  //Get values to send to Firebase
-  var firstnameToSend = $('#questionnaireFN').val();
-  console.log(firstnameToSend);
-  
-  var lastnameToSend = $('#questionnaireLN').val();
-  console.log(lastnameToSend);
-  
-  var typeguestToSend= $('#questionnaireTypeGuest').val();
-  console.log(categoryToSend);
-  
-  //Take the values from the form, and put them in an object
-  var newQuestionnaire= {
-    "lastnmame": firstnameToSend,
-    "firstname": lastnameToSend,
-    "typeguest": typeguestToSend
-  }
-  //Now we need to put our new object in a data array
-  data.push(newQuestionnaire);
-  console.log(data);
-  
-  //Now we need to send our new data to Firebase
-	ref.set(data, function(err){
-    if(err){
-      alert("There's something up with your data");
-      }
-    });
+//Take the values from the form, and put them in an object
 
-    return false;
-  })
-  ///Make a login form submission handler
-  $('#login').submit(function(event){
-    var $form = $(this);
-    $form.find('#registerForm').prop('disabled', true);
-    
-    //Now get the value of the login email
-		var login = $("#loginInput").val();
-    //Now get the value of the password
-    var password = $("#passwordInput").val();
-     
-    console.log(login, password);
-    register(login, password);
-    
-    return false;
-  })
 
-  ////Detect the authication state
-  var reg = new Firebase("#");
-  reg.onAuth(function(authData){
-    console.log("info on authentication");
-    if(authData){
-      //Now you are logged in
-      
-    }else{
-      //Now you are not logged in
-      
-    }
-  })
+//Now we need to push our data to Firebase
+function addQuestionnaireData(questionnaireData)
+  questionnaireData.push(questionnaireData);
+  console.log(questionnaireData);
+
+ 
+
+
+
+
