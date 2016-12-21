@@ -38,8 +38,10 @@ body {
 
 .row .Chart {
 /*    border: 1px solid grey;*/
-    width: 60%;
-    margin: 30px auto;
+    width: 50%;
+    margin: 0px auto;
+    padding-top: 30px;
+    padding-bottom: 10px;
 
 }
 
@@ -52,6 +54,13 @@ h2 {
   color: #231F20;
   font-size: 25px;
   text-align: center;
+  padding-top: 10px
+}
+
+h3 {
+  font-size: 25px;
+  text-align: center;
+  font-weight: bold;
 }
 
 h5 {
@@ -78,6 +87,15 @@ input[type="text"], textarea {
 /*Questionnaire*/
 
 
+.checkbox-leather.filled-in[type="checkbox"] + label:after{
+    border: 2px solid #231F20;
+    background: transparent;
+}
+.checkbox-leather.filled-in[type="checkbox"]:checked + label:after{
+    border: 2px solid #AB987A;
+    background: #AB987A;
+}
+
   /* label color */
    .input-field label {
      color: #000;
@@ -88,7 +106,7 @@ input[type="text"], textarea {
    }
    /* label underline focus color */
    .input-field input[type=text]:focus {
-     border-bottom: 1px solid #000;
+     border-bottom: 1px solid #EAEAEA;
      box-shadow: 0 1px 0 0 #000;
    }
    /* valid color */
@@ -103,9 +121,12 @@ input[type="text"], textarea {
    }
    /* icon prefix focus color */
    .input-field .prefix.active {
-     color: #000;
+     color: #AB987A;
    }
-      
+
+ 
+
+   
 
 
 

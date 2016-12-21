@@ -5,8 +5,8 @@ const pattendanceDiv = document.getElementById("preweddingAttendance");
 
 const pattendanceData = {
     labels: [
-        "Attending rehearsal dinner",
-        "Not attending rehearsal dinner"
+        "Attending",
+        "Not attending"
     ],
     datasets: [
         {
@@ -35,8 +35,8 @@ const attendanceDiv = document.getElementById("weddingAttendance");
 
 const attendanceData = {
     labels: [
-        "Attending wedding",
-        "Not attending wedding"
+        "Attending",
+        "Not attending"
     ],
     datasets: [
         {
@@ -104,13 +104,16 @@ new Chart(dietaryDiv, {
 
 // DIETARY REQUIREMENTS - POLAR
 
+
+// RELATIONSHIPS - BAR
+
 const relDiv = document.getElementById("relBar");
 
 const relData = {
     labels: ["Family", "School", "University", "Work", "+1", "Friends of parents", "Some random bar"],
     datasets: [
         {
-            label: "Types of relationships",
+            label: "How you met",
             backgroundColor: [
                 '#FF533D',
                 '#b8babd',
@@ -142,42 +145,34 @@ const myBarChart = new Chart(relDiv, {
 });
 
 
-// RELATIONSHIPS - BAR
+// PARTY - DOUGHNUT
+const partyDiv = document.getElementById("partyDoughnut");
 
-// const partyDiv = document.getElementById("partyRadar");
+const partyData = {
+    labels: [
+        "Bride",
+        "Groom"
+    ],
+    datasets: [
+        {
+            data: [110, 110],
+            backgroundColor: [
+                "#FF533D",
+                "#ff978a"
+            ],
+            hoverBackgroundColor: [
+                "#FF533D",
+                "#ff978a"
+            ]
+        }]
+};
 
-// const partyData = {
-//     labels: ["Family", "School", "University", "Work", "+1", "Friends of parents", "Some random bar"],
-//     datasets: [
-//         {
-//             label: "My First dataset",
-//             backgroundColor: "rgba(179,181,198,0.2)",
-//             borderColor: "rgba(179,181,198,1)",
-//             pointBackgroundColor: "rgba(179,181,198,1)",
-//             pointBorderColor: "#fff",
-//             pointHoverBackgroundColor: "#fff",
-//             pointHoverBorderColor: "rgba(179,181,198,1)",
-//             data: [65, 59]
-//         },
-//         {
-//             label: "My Second dataset",
-//             backgroundColor: "rgba(255,99,132,0.2)",
-//             borderColor: "rgba(255,99,132,1)",
-//             pointBackgroundColor: "rgba(255,99,132,1)",
-//             pointBorderColor: "#fff",
-//             pointHoverBackgroundColor: "#fff",
-//             pointHoverBorderColor: "rgba(255,99,132,1)",
-//             data: [28, 48]
-//         }
-//     ]
-// };
+const myDoughnutChart = new Chart(partyDiv, {
+    type: 'doughnut',
+    data: partyData,
+});
 
-// const myPartyRadar = new Chart(partyDiv, {
-//     type: 'radar',
-//     data: partyData,
-// });
-
-// // PARTY - RADAR
+// // PARTY - DOUGHNUT 
 
 const countryDiv = document.getElementById("countryLine");
 

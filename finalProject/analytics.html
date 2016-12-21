@@ -18,8 +18,8 @@
                         <div class="nav-wrapper">
                             <a href="#!" class="brand-logo"><i class="fa fa-anchor Header__logo" aria-hidden="true"></i>DroppingAnchor</a>
                             <ul class="right hide-on-med-and-down Button Button--rounded">
-                                <li><a class="waves-effect waves-light btn grey">Return to my questionnaire</a></li>
-                                <li><a class="waves-effect waves-light btn grey">[TBC]</a></li>
+                                <li><a class="waves-effect waves-light btn grey">Your form</a></li>
+                                <li><a class="waves-effect waves-light btn grey">Hjælp</a></li>
                             </ul>
                         </div>
                     </div>
@@ -31,27 +31,28 @@
             <div class="container">
                 <div class="row Chart">
                     <div class="container">
-                        <h2>Pre-wedding attendance</h2>
+                        <h3>YOUR GUEST ANALYTICS</h3>
+                        <h2>I. How do you know your guests?</h2>
+                    </div>
+                    <canvas id="relBar" width="100" height="100"></canvas>
+                </div>
+                <div class="row Chart">
+                    <div class="container">
+                        <h2>II. Guests attending your rehearsal dinner</h2>
                     </div>
                     <canvas id="preweddingAttendance" width="100" height="100"></canvas>
                 </div>
                 <div class="row Chart">
                     <div class="container">
-                        <h2>Wedding attendance</h2>
+                        <h2>III. Guests attending your wedding</h2>
                     </div>
                     <canvas id="weddingAttendance" width="100" height="100"></canvas>
                 </div>
                 <div class="row Chart">
                     <div class="container">
-                        <h2>Dietary requirements</h2>
+                        <h2>IV. Your guests' dietary requirements</h2>
                     </div>
                     <canvas id="dietaryChart" width="100" height="100"></canvas>
-                </div>
-                <div class="row Chart">
-                    <div class="container">
-                        <h2>Relationships</h2>
-                    </div>
-                    <canvas id="relBar" width="100" height="100"></canvas>
                 </div>
                 <!-- <div class="row Chart">
                     <div class="container">
@@ -61,16 +62,16 @@
                     </div> -->
                 <div class="row Chart">
                     <div class="container">
-                        <h2>Nationality</h2>
+                        <h2>V. Your guests' global footprint</h2>
                     </div>
                     <canvas id="countryLine" width="100" height="100"></canvas>
                 </div>
-                <!-- <div class="row Chart">
+                <div class="row Chart">
                     <div class="container">
-                    	<h2>Age</h2>
+                    	<h2>VI. Bride or Groom?</h2>
                     </div>
-                    <canvas id="ageDoughnut" width="100" height="100"></canvas>
-                    </div> -->
+                    <canvas id="partyDoughnut" width="100" height="100"></canvas>
+                </div>
             </div>
         </div>
         <!-- Main -->
