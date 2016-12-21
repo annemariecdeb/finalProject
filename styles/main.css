@@ -1,27 +1,162 @@
-div {
-	display: block;
+body {
+    background: #000;
 }
 
-.Menu {
-    font-family: Arial,Helvetica,sans-serif;
-    font-size: 10px;
-    cursor: default;
-    background: url(assets/couple.jpg);
-    color: #000;
+* { box-sizing: border-box; }
+
+
+body {
+  font-family: sans-serif;
+}
+
+/* ---- grid ---- */
+
+.grid {
+  background: #F5F5F5;
+  margin-top: 70px;
+}
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+
+/* ---- .element-item ---- */
+
+/* 5 columns, percentage width */
+.grid-item, .grid-sizer {
+  gutter: 10;
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+
+
+.grid-item {
+  float: left;
+  background: #AB987A;
+  border-color: hsla(0, 0%, 0%, 0.7);
+  background: #AB987A;
+}
+
+.grid-item--rectangle {
+    width: 400px;
+    height: 150px;
+}
+
+.grid-item--horizontal {
+    width: 274px;
+    height: 300px;
+}
+
+.grid-item--smallhorizontal {
+    width: 274px;
+    height: 147px;
+}
+
+.grid-item--small {
+    width: 150px;
+    height: 150px;
+}
+
+.grid-item--extrasmall {
+    width: 100px;
+    height: 100px;
+}
+
+.grid-item--large {
+    width: 556px;
+    height: 300px;
+}
+
+.grid-item--square {
+    width: 300px;
+    height: 454px;
+    margin-left: 10px;
+}
+
+.Main {
+    background-color: #F5F5F5;
+    position: relative;
+}
+
+.Main__index {
+    height: 698px;  
+    position: relative; 
+}
+
+.Header__nav {
+    background-color: #0f1626; 
+}
+
+.brand-logo {
+    margin-left: -100px;
+}
+
+.Form-submit {
+    float: right;
+}
+
+#myChart--pie {
+    width: 300px !important;
+    height: 300px !important;
+    margin: 0 auto;
+}
+
+#myChart--polar {
+    width: 300px !important;
+    height: 300px !important;
+    margin: 0 auto;
+}
+
+#myChart--radar {
+    width: 300px !important;
+    height: 300px !important;
+    margin: 0 auto;
+}
+
+.Footer {
+    position: fixed;
+    bottom: 0;
     width: 100%;
-    height: 100%;
-    overflow: hidden;
     margin: 0;
-    padding: 0;
-    border: 0px solid #EEEEEE;
-    display: block;
 }
 
 
-.Mainbox {
-
+.Copyright  {
+    margin-left: -100px;
+    background-color: #080b14;
+    padding: 20px;
+    bottom: 0;
 }
 
-.Mainbox__title {
-	
+.Chart{
+    border: 1px solid black;
+    width: 80%;
+    margin: 15px auto;
 }
+
+h5 {
+    color: #0f1626;
+  
+}
+
+li {
+    color: #AB987A;
+}
+
+.fa {
+    color: #FF533D;
+}
+
+
+input[type="text"], textarea {
+  color: #0f1626; 
+}
+
+
+
+
+
