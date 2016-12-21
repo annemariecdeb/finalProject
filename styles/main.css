@@ -27,18 +27,11 @@ body {
 /* ---- .element-item ---- */
 
 /* 5 columns, percentage width */
-.grid-item, .grid-sizer {
-  gutter: 10;
-  margin-bottom: 5px;
-  margin-left: 5px;
-}
-
 
 .grid-item {
   float: left;
   background: #AB987A;
-  border-color: hsla(0, 0%, 0%, 0.7);
-  background: #AB987A;
+  border: 1px solid black;
 }
 
 .grid-item--rectangle {
@@ -74,17 +67,14 @@ body {
 .grid-item--square {
     width: 300px;
     height: 454px;
-    margin-left: 10px;
+}
+
+.grid-happycouple {
+  background-image: url('../assets/couple.jpeg');
 }
 
 .Main {
     background-color: #F5F5F5;
-    position: relative;
-}
-
-.Main__index {
-    height: 698px;  
-    position: relative; 
 }
 
 .Header__nav {

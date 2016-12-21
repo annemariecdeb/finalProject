@@ -1,4 +1,4 @@
-// 1. FIRST NAME/LAST NAME
+// 1. FIRST NAME/LAST NAMEjs
 const fname = $("#first_name"),
       lname = $("#last_name");
 const msg = document.getElementById("name_error_msg");
