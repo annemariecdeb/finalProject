@@ -34,7 +34,8 @@ events.wedding.attending = false;
 //form submit event
 function submitForm(event) {
     event.preventDefault();
-    getFormValues();
+    window.location.assign('analytics.html');
+    // getFormValues();
     // validateFormInputs();
     // writeFormValuesToFBase();
 }
@@ -73,4 +74,5 @@ function onSubmitFormClick() {
 
 //invoke our click and Enter listeners
 onSubmitFormClick();
-onSubmitFormEnter();
+// onSubmitFormEnter();
+
