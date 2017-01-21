@@ -58,51 +58,51 @@ const weddingAttendanceChart = new Chart(attendanceDiv,{
 });
 
 
-// DIETARY REQUIREMENTS - POLAR
+// // DIETARY REQUIREMENTS - POLAR
 
-const dietaryDiv = document.getElementById("dietaryChart");
-// 
+// const dietaryDiv = document.getElementById("dietaryChart");
+// // 
 
-const dietaryData = {
-    datasets: [{
-        data: [
-            11,
-            16,
-            7,
-            3,
-            14,
-            9,
-            6
-        ],
-        backgroundColor: [
-            "#FF533D",
-            "#2b3f6c",
-            "#7c94cb",
-            "#b8babd",
-            "#FFCE56",
-            "#ff978a",
-            "#AB987A"
-        ],
-        label: 'My dataset' // for legend
-    }],
-    labels: [
-        "None", 
-        "Vegetarian (fish ok)", 
-        "Vegetarian (fish not ok)", 
-        "Gluten-free", 
-        "Kid's meal", 
-        "Baby bowl", 
-        "Other"
-    ]
-};
+// const dietaryData = {
+//     datasets: [{
+//         data: [
+//             11,
+//             16,
+//             7,
+//             3,
+//             14,
+//             9,
+//             6
+//         ],
+//         backgroundColor: [
+//             "#FF533D",
+//             "#2b3f6c",
+//             "#7c94cb",
+//             "#b8babd",
+//             "#FFCE56",
+//             "#ff978a",
+//             "#AB987A"
+//         ],
+//         label: 'My dataset' // for legend
+//     }],
+//     labels: [
+//         "None", 
+//         "Vegetarian (fish ok)", 
+//         "Vegetarian (fish not ok)", 
+//         "Gluten-free", 
+//         "Kid's meal", 
+//         "Baby bowl", 
+//         "Other"
+//     ]
+// };
 
-new Chart(dietaryDiv, {
-    data: dietaryData,
-    type: 'polarArea',
+// new Chart(dietaryDiv, {
+//     data: dietaryData,
+//     type: 'polarArea',
 
-});
+// });
 
-// DIETARY REQUIREMENTS - POLAR
+// // DIETARY REQUIREMENTS - POLAR
 
 
 // RELATIONSHIPS - BAR
